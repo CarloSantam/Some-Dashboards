@@ -18,7 +18,7 @@ import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
-df=pd.read_csv("data\gapminder_data_graphs.csv")
+df=pd.read_csv("data/gapminder_data_graphs.csv")
 
 try:
     st.set_page_config(layout='wide')
