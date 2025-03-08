@@ -12,6 +12,11 @@ import plotly.express as px
 import pandas as pd
 
 
+import os
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+
 df=pd.read_csv("data/share-of-individuals-using-the-internet.csv")
 
 df_filtred=df.loc[(df['Year']>=2000) & (df['Year']<=2016) ]
