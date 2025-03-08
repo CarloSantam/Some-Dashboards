@@ -8,6 +8,12 @@ Created on Mon Feb 24 07:54:24 2025
 import plotly.express as px
 import streamlit as st
 
+
+import os
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+
 # Carica il dataset iris
 df = px.data.iris()
 st.set_page_config(layout='wide')
